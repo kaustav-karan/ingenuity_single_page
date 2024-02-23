@@ -10,7 +10,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="keywords" content="">
-        <meta name="robots" content="index, follow">
         <meta name="theme-color" content="#ffffff">
         <meta property="og:title" content="ingeNUity 2023 - Home">
         <meta property="og:description" content="">
@@ -37,6 +36,10 @@
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/templatemo-festava-live.css" rel="stylesheet">
+
+        <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+       
+        <!-- <link href="css/style.css" rel="stylesheet" type="text/css" /> -->
         
 
     </head>
@@ -145,21 +148,21 @@
                                     <!-- <span class="text-white me-3">Share:</span> -->
 
                                     <li class="social-icon-item">
-                                        <a href="#" class="social-icon-link">
+                                        <a href="https://www.facebook.com/ingenuity.NU?mibextid=ZbWKwL" class="social-icon-link">
                                             <!-- add socials link -->
                                             <span class="bi-facebook"></span>
                                         </a>
                                     </li>
 
                                     <li class="social-icon-item">
-                                        <a href="#" class="social-icon-link">
+                                        <a href="https://twitter.com/ingeNUity_Fest" class="social-icon-link">
                                             <!-- add socials link -->
                                             <span class="bi-twitter"></span>
                                         </a>
                                     </li>
 
                                     <li class="social-icon-item">
-                                        <a href="#" class="social-icon-link">
+                                        <a href="https://www.instagram.com/ingenuity_fest/" class="social-icon-link">
                                             <!-- add socials link -->
                                             <span class="bi-instagram"></span>
                                         </a>
@@ -461,6 +464,7 @@
                 </div>
             </section> -->
 
+            <section cleass=""></section>
 
             <section class="contact-section section-padding" id="section_6">
                 <div class="container">
@@ -507,7 +511,7 @@
                                 </div>
 
                                 <div class="tab-pane fade" id="nav-ContactMap" role="tabpanel" aria-labelledby="nav-ContactMap-tab">
-                                    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29974.469402870927!2d120.94861466021855!3d14.106066818082482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd777b1ab54c8f%3A0x6ecc514451ce2be8!2sTagaytay%2C%20Cavite%2C%20Philippines!5e1!3m2!1sen!2smy!4v1670344209509!5m2!1sen!2smy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3524.0610433176057!2d76.4014658!3d27.9614167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db6d381bd8a09%3A0x5cd01de55b1d2c65!2sNIIT%20University!5e0!3m2!1sen!2sin!4v1708705982781!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     <!-- You can easily copy the embed code from Google Maps -> Share -> Embed a map // -->
                                 </div>
                             </div>
@@ -532,27 +536,25 @@
                         <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
                             <ul class="social-icon d-flex justify-content-lg-end">
                                 <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link">
+                                    <a href="https://www.facebook.com/ingenuity.NU?mibextid=ZbWKwL" class="social-icon-link">
                                         <!-- add socials link -->
                                         <span class="bi-facebook"></span>
                                     </a>
                                 </li>
-                                
+
                                 <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link">
-                                            <!-- add socials link -->
+                                    <a href="https://twitter.com/ingeNUity_Fest" class="social-icon-link">
+                                        <!-- add socials link -->
                                         <span class="bi-twitter"></span>
                                     </a>
                                 </li>
-    
+
                                 <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link">
+                                    <a href="https://www.instagram.com/ingenuity_fest/" class="social-icon-link">
                                         <!-- add socials link -->
                                         <span class="bi-instagram"></span>
                                     </a>
                                 </li>
-
-                                
                             </ul>
                         </div>
                     </div>
@@ -655,6 +657,38 @@ T e m p l a t e M o
 -->
 
         <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script>
+        function slider_carouselInit() {
+            $(".owl-carousel.slider_carousel").owlCarousel({
+            dots: false,
+            loop: true,
+            margin: 30,
+            stagePadding: 2,
+            autoplay: false,
+            nav: true,
+            navText: [
+                "<i class='far fa-arrow-alt-circle-left'></i>",
+                "<i class='far fa-arrow-alt-circle-right'></i>",
+            ],
+            autoplayTimeout: 1500,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                items: 1,
+                },
+                768: {
+                items: 2,
+                },
+                992: {
+                items: 5,
+                },
+            },
+            });
+        }
+        slider_carouselInit();
+        </script>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
