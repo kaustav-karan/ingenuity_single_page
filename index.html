@@ -23,6 +23,7 @@
         <meta name="twitter:image" content="">
 
         <title>ingeNUity 2023 - Home</title>
+        <link rel="icon" type="image/png" href="images/logo/logo.png" />
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,7 +68,7 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        ingeNUity 2023
+                        ingeNUity 2024
                     </a>
 
                     <a href="https://forms.gle/sSgDNhWQL2AwvU2HA" class="btn custom-btn d-lg-none ms-auto me-4">Register Now</a>
@@ -191,15 +192,15 @@
                             <div class="services-info">
                                 <h2 class="text-white mb-4">About ingeNUity 2024</h2>
 
-                                <p class="text-white">ingeNUity is NIIT University annual cultural fest, no it more than just a cultural fest , ingeNUity is a grand celebration.</p>
+                                <p class="text-white">ingeNUity is NIIT University annual cultural fest, no it more than just a cultural fest, ingeNUity is a grand celebration.</p>
 
-                                <h6 class="text-white mt-4">Once in Lifetime Experience</h6>
+                                <h6 class="text-white mt-4">You Only Live Once</h6>
 
                                 <p class="text-white">Mortala is a journey where each moment contributes to the evolving canvas of existence. Bringing together culture and change together.</p>
 
-                                <h6 class="text-white mt-4">Whole Night Party</h6>
+                                <h6 class="text-white mt-4">Join Us in this Journey</h6>
 
-                                <p class="text-white">Please tell your friends about our website. Thank you.</p>
+                                <p class="text-white">Let whispers of your dreams paint the sky, as onward we press, where possibilities lie.</p>
                             </div>
                         </div>
 
@@ -487,7 +488,7 @@
 
                             <div class="tab-content shadow-lg mt-5" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-ContactForm" role="tabpanel" aria-labelledby="nav-ContactForm-tab">
-                                    <form class="custom-form contact-form mb-5 mb-lg-0" action="#" method="post" role="form">
+                                    <form class="custom-form contact-form mb-5 mb-lg-0" action="" name="contact-form" method="post" role="form" >
                                         <div class="contact-form-body">
                                             <div class="row">
                                                 <div class="col-lg-6 col-md-6 col-12">
@@ -499,7 +500,7 @@
                                                 </div>
                                             </div>
 
-                                            <input type="text" name="contact-mobile-number" id="contact-mobile-number" class="form-control" placeholder="Mobile Number" required>
+                                            <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" name="contact-mobile-number" id="contact-mobile-number" class="form-control" placeholder="Mobile Number" required>
 
                                             <textarea name="contact-message" rows="3" class="form-control" id="contact-message" placeholder="Message"></textarea>
 
@@ -588,6 +589,13 @@
                                 <a href="#" class="site-footer-link">Contact</a>
                             </li>
                         </ul> -->
+                        <div class="col-lg-6 col-12 mb-4 pb-2">
+                            <a style="color:#ffffff; font-size: var(--h4-font-size);font-weight: var(--font-weight-bold);">
+                            <img src="images/logo/logo.png" alt="Image" class="img-fluid" style="height: 150px; width:150px;"><br>
+                            ingeNUity 2024
+                        </a>
+                        </div>
+                        
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
@@ -689,6 +697,7 @@ T e m p l a t e M o
         }
         slider_carouselInit();
         </script>
+        <script src="js/GoogleSheetsForm.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
